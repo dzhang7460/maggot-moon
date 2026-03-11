@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYSTEM ACCESS — TERMINAL</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Override main site body styles for terminal page */
+    body {
+      background-color: #0a0a0a !important;
+      background-image: none !important;
+    }
+    /* Hide the main-site scanline, terminal has its own */
+    body::after {
+      display: none !important;
+    }
+  </style>
+</head>
+<body class="terminal-body">
+
+  <div class="terminal-container">
+    <div class="terminal-window">
+      <div class="terminal-titlebar">
+        <span>MOTHERLAND SECURE TERMINAL v4.7</span>
+        <span>SESSION #00491</span>
+      </div>
+      <div class="terminal-content">
+        <div class="terminal-line dim">MOTHERLAND INTERNAL NETWORK — RESTRICTED ACCESS</div>
+        <div class="terminal-line dim">======================================================</div>
+        <div class="terminal-line" style="margin-top: 1rem;">SYSTEM BOOT..... OK</div>
+        <div class="terminal-line">NETWORK LINK..... ENCRYPTED</div>
+        <div class="terminal-line">FIREWALL......... ACTIVE</div>
+        <div class="terminal-line">CLEARANCE LEVEL.. <span class="warning">UNAUTHORIZED</span></div>
+        <div class="terminal-line dim" style="margin-top: 1rem;">------------------------------------------------------</div>
+        <div class="terminal-line amber" style="margin-top: 1rem;">&#9888; THIS TERMINAL IS MONITORED BY STATE SECURITY.</div>
+        <div class="terminal-line amber">&#9888; UNAUTHORIZED ACCESS IS PUNISHABLE UNDER DIRECTIVE 91-X.</div>
+        <div class="terminal-line dim" style="margin-top: 1rem;">------------------------------------------------------</div>
+        <div class="terminal-line" style="margin-top: 1.5rem;">ENTER DECRYPTION KEY TO PROCEED:</div>
+
+        <form id="loginForm" onsubmit="return attemptDecrypt(event)">
+          <div class="terminal-prompt">
+            <span class="terminal-prompt-symbol">&gt;_</span>
+            <input type="password" id="accessKey" class="terminal-input" placeholder="ENTER KEY..." autocomplete="off" autofocus>
+          </div>
+          <button type="submit" class="terminal-btn">[ DECRYPT ]</button>
+        </form>
+
+        <div class="terminal-footer">
+          CONNECTION: 127.0.0.1:4747 &bull; ENCRYPTED TUNNEL ACTIVE &bull; TRACE ENABLED<br>
+          ALL KEYSTROKES ARE LOGGED BY THE MINISTRY OF INFORMATION
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGIN SCRIPT -->
+  <script>
+    function attemptDecrypt(e) {
+      e.preventDefault();
+      var key = document.getElementById('accessKey').value.trim();
+      if (key === 'DIRECTIVE47') {
+        window.location.href = 'classified.html';
+      } else {
+        document.getElementById('accessKey').value = '';
+        alert('ACCESS DENIED. YOUR IP HAS BEEN LOGGED AND REPORTED TO THE MINISTRY.');
+      }
+      return false;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Impurities — THE MOTHERLAND VOICE</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- PROPAGANDA TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>PURITY IS STRENGTH &bull; SILENCE IS SAFETY &bull; REPORT ALL IMPURITIES &bull; PURITY IS STRENGTH &bull; SILENCE IS SAFETY &bull; REPORT ALL IMPURITIES &bull; PURITY IS STRENGTH &bull; SILENCE IS SAFETY &bull; REPORT ALL IMPURITIES &bull;&nbsp;</span>
+      <span>PURITY IS STRENGTH &bull; SILENCE IS SAFETY &bull; REPORT ALL IMPURITIES &bull; PURITY IS STRENGTH &bull; SILENCE IS SAFETY &bull; REPORT ALL IMPURITIES &bull; PURITY IS STRENGTH &bull; SILENCE IS SAFETY &bull; REPORT ALL IMPURITIES &bull;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION -->
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo">&#9733; THE MOTHERLAND VOICE</a>
+      <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="./">DIRECTIVES</a>
+        <a href="./purity.html">PURITY INITIATIVE</a>
+        <a href="./lunar.html">LUNAR MISSION</a>
+        <a href="./vigilance.html">CITIZEN VIGILANCE</a>
+        <a href="./palace.html">INFRASTRUCTURE</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO IMAGE -->
+  <section class="article-page" style="padding-top: 0;">
+    <div class="container" style="padding-top: 0;">
+      <div class="article-hero-wrap" style="margin-bottom: 0;">
+        <img src="https://via.placeholder.com/800x400/111111/b30000?text=REPORT+IMPURITIES+%E2%80%94+YOUR+DUTY" alt="Propaganda poster urging citizens to report impurities — replace with your own image" class="brutalist-image">
+        <div class="image-caption">&#9733; PHOTO APPROVED BY CENSORSHIP OFFICE &#9733;</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPORT SECTION -->
+  <section class="article-page">
+    <div class="container">
+
+      <div class="article-header" style="margin-bottom: 2rem;">
+        <!-- State Seal -->
+        <div class="state-seal">
+          <span class="seal-text-top">THE MOTHERLAND</span>
+          <span class="seal-star">&#9733;</span>
+          <span class="seal-text-bottom">CLASSIFIED</span>
+        </div>
+
+        <h1 class="article-title">Citizen Impurity Report — Form 47-C</h1>
+        <div class="article-byline">Ministry of Purity &mdash; Bureau of Internal Vigilance | All Zones, Effective Immediately</div>
+      </div>
+
+      <div class="report-intro">
+        <h2>Your Silence is Their Shield</h2>
+        <p>It is the sacred duty of every citizen to report impurities, subversion, and treasonous behaviour. Failure to report is itself an act of treason. The Motherland watches. The Motherland remembers. The Motherland rewards.</p>
+      </div>
+
+      <!-- THE FORM -->
+      <form class="report-form" id="reportForm" onsubmit="return submitReport(event)">
+
+        <div class="form-group">
+          <label for="citizenId">Your Citizen ID Number <span class="required-star">*</span></label>
+          <input type="text" id="citizenId" class="form-input" placeholder="e.g. ZN7-0041-C" required>
+        </div>
+
+        <div class="form-group">
+          <label for="suspectName">Suspect Full Name <span class="required-star">*</span></label>
+          <input type="text" id="suspectName" class="form-input" placeholder="Full name as registered" required>
+        </div>
+
+        <div class="form-group">
+          <label for="suspectLocation">Suspect Location / Zone <span class="required-star">*</span></label>
+          <input type="text" id="suspectLocation" class="form-input" placeholder="e.g. Zone Seven, Block 14, Unit 3" required>
+        </div>
+
+        <div class="form-group">
+          <label for="treasonDetails">Details of Treason / Impurity <span class="required-star">*</span></label>
+          <textarea id="treasonDetails" class="form-textarea" placeholder="Describe the observed impurity, subversive behaviour, or treasonous activity in full detail. Include dates, witnesses, and any evidence." required></textarea>
+        </div>
+
+        <div class="form-warning">
+          &#9888; WARNING: Filing a false report is punishable under Directive 12-A. All submissions are monitored and traced. &#9888;
+        </div>
+
+        <button type="submit" class="submit-btn">&#9733; SUBMIT REPORT &#9733;</button>
+      </form>
+
+      <div class="notice-box">
+        <p>&#9733; REMINDER &#9733;<br>SHIELDING IMPURITIES OR WITHHOLDING INFORMATION IS AN ACT OF TREASON<br>THE MOTHERLAND REWARDS THOSE WHO LOOK FORWARD, NOT THOSE WHO LOOK AWAY</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>CITIZEN DIRECTIVES</h4>
+          <p>All citizens must display the National Flag at all times. Failure to salute passing officials is punishable under Directive 47-B. Ignorance is not innocence.</p>
+        </div>
+        <div class="footer-col">
+          <h4>NAVIGATION</h4>
+          <a href="./">Directives</a>
+          <a href="./purity.html">Purity Initiative</a>
+          <a href="./lunar.html">Lunar Mission</a>
+          <a href="./vigilance.html">Citizen Vigilance</a>
+          <a href="./palace.html">Infrastructure</a>
+        </div>
+        <div class="footer-col">
+          <h4>REPORT IMPURITIES</h4>
+          <p>Contact your local Greenfly officer immediately. Silence is complicity. Complicity is treason. The Motherland rewards vigilance.</p>
+          <a href="./report.html">Report Impurities</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 1956 THE MOTHERLAND VOICE &mdash; ALL RIGHTS RESERVED BY THE STATE</p>
+        <p>&#9733; OBEY &middot; PURIFY &middot; PREVAIL &#9733;</p>
+        <!-- Hidden access point -->
+        <a href="./login.html" class="hidden-link" title="System Maintenance">&#128274;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- REPORT SUBMISSION SCRIPT -->
+  <script>
+    const BIN_ID   = '69b0d810864efc355b5f7734';
+    const API_KEY  = '$2a$10$f6S4XyFVUbIsuRF66qluFOnwlTasoVNe1Z8qr1TjUIRl3qzG/YYeq';
+    const BIN_URL  = 'https://api.jsonbin.io/v3/b/' + BIN_ID;
+    const HEADERS  = {
+      'Content-Type': 'application/json',
+      'X-Master-Key': API_KEY
+    };
+
+    async function submitReport(e) {
+      e.preventDefault();
+
+      const btn = document.querySelector('.submit-btn');
+      const originalText = btn.textContent;
+      btn.textContent = '★ TRANSMITTING TO MINISTRY... ★';
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+      btn.style.cursor = 'wait';
+
+      /* ---- Collect form data ---- */
+      const newReport = {
+        citizenId:      document.getElementById('citizenId').value.trim(),
+        suspectName:    document.getElementById('suspectName').value.trim(),
+        location:       document.getElementById('suspectLocation').value.trim(),
+        treasonDetails: document.getElementById('treasonDetails').value.trim(),
+        timestamp:      new Date().toISOString(),
+        ref:            'RPT-' + Date.now()
+      };
+
+      try {
+        /* ---- 1. GET the existing bin contents ---- */
+        const getRes = await fetch(BIN_URL + '/latest', {
+          method: 'GET',
+          headers: { 'X-Master-Key': API_KEY }
+        });
+
+        if (!getRes.ok) throw new Error('GET failed — Status ' + getRes.status);
+
+        const getData   = await getRes.json();
+        const existing  = getData.record;
+
+        /* Ensure we have an array to push into */
+        const reports = Array.isArray(existing) ? existing : [];
+        reports.push(newReport);
+
+        /* ---- 2. PUT the updated array back ---- */
+        const putRes = await fetch(BIN_URL, {
+          method: 'PUT',
+          headers: HEADERS,
+          body: JSON.stringify(reports)
+        });
+
+        if (!putRes.ok) throw new Error('PUT failed — Status ' + putRes.status);
+
+        /* ---- 3. Success ---- */
+        document.getElementById('reportForm').reset();
+        alert(
+          'STAR OF PURITY LOGGED. THE MOTHERLAND THANKS YOU FOR YOUR VIGILANCE. ' +
+          'A GREENFLY OFFICER WILL BE DISPATCHED SHORTLY.\n\n' +
+          'Reference: ' + newReport.ref
+        );
+
+      } catch (err) {
+        console.error('Report submission error:', err);
+        alert(
+          '⚠ TRANSMISSION FAILURE ⚠\n\n' +
+          'The Ministry relay could not be reached. ' +
+          'Your report has been cached locally. ' +
+          'Please attempt retransmission.\n\n' +
+          'Error: ' + err.message
+        );
+      } finally {
+        /* Restore button regardless of outcome */
+        btn.textContent = originalText;
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.style.cursor = 'pointer';
+      }
+
+      return false;
+    }
+  </script>
+
+</body>
+</html>

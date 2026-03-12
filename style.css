@@ -1126,10 +1126,10 @@ body::after {
 /* Hidden footer link */
 .hidden-link {
   color: #444;
-  font-size: 0.55rem;
-  opacity: 0.15;
+  font-size: 1rem;
+  opacity: 0.25;
   text-decoration: none;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
   display: inline-block;
   margin-top: 0.5rem;
 }
